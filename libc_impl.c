@@ -3358,3 +3358,31 @@ int32_t wrapper_msgsnd(uint8_t *mem, int32_t msqid, uint32_t msgp, uint32_t msgz
 int32_t wrapper_msgrcv(uint8_t *mem, int32_t msqid, uint32_t msgp, uint32_t msgz, int32_t msgtyp, int32_t msgflg) {
     assert(0 && "msgrcv not implemented");
 }
+
+// https://man.irix.fans/6.4-p199909/3c/directory
+uint32_t wrapper_opendir(uint8_t *mem, uint32_t filename) {
+    assert(0 && "opendir not implemented");
+}
+
+uint32_t wrapper_readdir(uint8_t *mem, uint32_t dirp) {
+    assert(0 && "readdir not implemented");
+}
+
+int wrapper_closedir(uint8_t *mem, uint32_t dirp) {
+    assert(0 && "closedir not implemented");
+}
+
+// https://man.irix.fans/6.4-p199909/3c/difftime
+double wrapper_difftime(uint8_t *mem, int32_t time1, int32_t time0) {
+    assert(0 && "difftime not implemented");
+}
+
+// https://man.irix.fans/6.4-p199909/3f/3s/setbuf
+void wrapper_setbuf(uint8_t *mem, uint32_t stream, uint32_t buf) {
+    assert(0 && "setbuf not implemented");
+}
+
+// https://man.irix.fans/6.4-p199909/3c/bsearch
+uint32_t wrapper_bsearch(uint8_t *mem, uint32_t key, uint32_t base, uint32_t nel, uint32_t size, uint32_t compar) {
+    assert(0 && "bsearch not implemented");
+}

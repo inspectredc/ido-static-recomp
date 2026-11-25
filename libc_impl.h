@@ -204,6 +204,12 @@ int32_t wrapper_semctl(uint8_t *mem, int32_t semid, int32_t semnum, int32_t cmd,
 int32_t wrapper_msgctl(uint8_t *mem, int32_t msqid, int32_t cmd, uint32_t sp);
 int32_t wrapper_msgsnd(uint8_t *mem, int32_t msqid, uint32_t msgp, uint32_t msgz, int32_t msgflg);
 int32_t wrapper_msgrcv(uint8_t *mem, int32_t msqid, uint32_t msgp, uint32_t msgz, int32_t msgtyp, int32_t msgflg);
+uint32_t wrapper_opendir(uint8_t *mem, uint32_t filename);
+uint32_t wrapper_readdir(uint8_t *mem, uint32_t dirp);
+int wrapper_closedir(uint8_t *mem, uint32_t dirp);
+double wrapper_difftime(uint8_t *mem, int32_t time1, int32_t time0);
+void wrapper_setbuf(uint8_t *mem, uint32_t stream, uint32_t buf);
+uint32_t wrapper_bsearch(uint8_t *mem, uint32_t key, uint32_t base, uint32_t nel, uint32_t size, uint32_t compar);
 
 // C++ functions
 uint32_t wrapper___nw__FUi(uint8_t *mem, uint32_t size);

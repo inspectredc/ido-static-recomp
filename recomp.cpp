@@ -471,6 +471,12 @@ const struct ExternFunction {
     { "semctl", "iiii", FLAG_VARARG},
     { "msgctl", "iii", FLAG_VARARG},
     { "lockf", "iiii"}, // 64?
+    { "opendir", "pp"},
+    { "readdir", "pp"},
+    { "closedir", "ip"},
+    { "difftime", "dii"},
+    { "setbuf", "vpp"},
+    { "bsearch", "pppppp"},
     // C++ functions
     { "__nw__FUi", "pu", 0 },
     { "__dl__FPv", "vp", 0 },
