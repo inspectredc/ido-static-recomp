@@ -163,7 +163,7 @@ LIBC_IMPL     := libc_impl_$(subst .,,$(VERSION))
 %/libc_impl_71.o: CFLAGS += -DIDO71
 
 # edgcpfe 7.1 uses libc 5.3
-%/7.1/out/edgcpfe:: LIBC_IMPL := libc_impl_53
+# %/7.1/out/edgcpfe:: LIBC_IMPL := libc_impl_53
 
 #### Main Targets ###
 
